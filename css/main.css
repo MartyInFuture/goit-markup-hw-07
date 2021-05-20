@@ -88,6 +88,20 @@ a {
   display: flex;
 }
 
+.block {
+  display: block;
+}
+
+.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #afb1b8;
+}
+
 .social-list__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,16 +125,6 @@ a {
 
 .social-list__item:hover {
   background-color: #2196f3;
-}
-
-.social-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #afb1b8;
 }
 
 .social-list__link {

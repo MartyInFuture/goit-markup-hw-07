@@ -1,4 +1,6 @@
 @import './index';
 
 // portfolio styles
-@import './components/portfolio/portfolio';
+@import './components/portfolio/base';
+@import './components/portfolio/buttons-list';
+@import './components/portfolio/works-list';
