@@ -178,7 +178,7 @@
   pointer-events: none;
 
   .modal-form__checkbox:checked + & {
-    border-color: $accent-color;
+    border: none;
     background-image: url('../images/icon-check.svg');
     background-origin: border-box;
   }

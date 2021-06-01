@@ -771,7 +771,7 @@ a {
 }
 
 .modal-form__checkbox:checked + .modal-form__new-checkbox {
-  border-color: #2196f3;
+  border: none;
   background-image: url("../images/icon-check.svg");
   background-origin: border-box;
 }
