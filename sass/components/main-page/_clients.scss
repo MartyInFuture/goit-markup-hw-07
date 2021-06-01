@@ -22,25 +22,24 @@
 }
 
 .clients__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-
-  width: 170px;
-  height: 92px;
-
-  cursor: pointer;
-
-  transition: border-color 250ms $cubic;
-
   &:not(:last-child) {
     margin-right: 30px;
   }
+}
 
-  &:hover {
+.clients__link {
+  display: flex;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+
+  transition: color 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
     border-color: $accent-color;
   }
 }
@@ -50,7 +49,8 @@
 
   transition: fill 250ms $cubic;
 
-  .clients__item:hover & {
+  .clients__link:hover &,
+  .clients__link:focus & {
     fill: $accent-color;
   }
 }

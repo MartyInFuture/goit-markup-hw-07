@@ -17,6 +17,7 @@
 // address styles
 
 .address {
+  width: 231px;
   margin-right: 70px;
 }
 
@@ -40,7 +41,8 @@
 
   transition: color 250ms $cubic;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $accent-color;
   }
 }
@@ -60,7 +62,7 @@
   line-height: 1.17;
 }
 
-.social-list__item--footer {
+.social-list__link--footer {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -84,6 +86,7 @@
 .subscribe__email-input {
   padding: 14px 16px;
   margin-right: 12px;
+  width: 350px;
 
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -100,6 +103,7 @@
 
   position: relative;
   padding: 10px 62px 10px 29px;
+  width: 200px;
 
   font-size: 16px;
   line-height: 1.875;

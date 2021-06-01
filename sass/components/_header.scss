@@ -26,14 +26,6 @@
 }
 
 .site-nav__item {
-  color: $secondary-text-color;
-  position: relative;
-  transition: color 250ms $cubic;
-
-  &:hover {
-    color: $accent-color;
-  }
-
   &:not(:last-child) {
     margin-right: 50px;
   }
@@ -44,6 +36,15 @@
   padding-bottom: 32px;
   padding-top: 32px;
 
+  color: $secondary-text-color;
+  position: relative;
+  transition: color 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
   &::after {
     @extend %underline;
     transform: scaleX(0);
@@ -51,7 +52,8 @@
     transition: transform 250ms $cubic, opacity 250ms $cubic;
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:focus::after {
     opacity: 1;
     transform: scaleX(1);
   }
@@ -67,31 +69,42 @@
 .site-nav-contacts__item {
   position: relative;
 
-  fill: $main-text-color;
-
-  transition: color 250ms $cubic, fill 250ms $cubic;
-
-  &:hover {
-    color: $accent-color;
-    fill: $accent-color;
-  }
-
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
 
 .site-nav-contacts__link {
-  padding-left: 26px;
+  // padding-left: 26px;
   display: inline-block;
   position: relative;
   align-items: center;
+
+  fill: $main-text-color;
+
+  transition: color 250ms $cubic, fill 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .site-nav-contacts__icon {
+  display: inline-block;
+  fill: $main-text-color;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+
+  .site-nav-contacts__link:hover &,
+  .site-nav-contacts__link:focus & {
+    fill: $accent-color;
+  }
+}
+
+.site-nav-contacts__link-text {
+  margin-left: 26px;
 }
 
 // underline
